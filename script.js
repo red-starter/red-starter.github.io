@@ -11,30 +11,30 @@ $(document).ready(function(){
 			window.location.hash = target;
 		});
 	});
-});
 
-$('button.toggle').click(function () {
-	$(this).prev('div').collapse('toggle')
-	$(this).find('i.glyphicon').toggleClass('glyphicon-chevron-up glyphicon-chevron-down')
-	$(this).find('span.btn-label').toggle('slow');
-})
 
-var fewSeconds = 1;
+	$('button.toggle').click(function () {
+		$(this).prev('div').collapse('toggle')
+		$(this).find('i.glyphicon').toggleClass('glyphicon-chevron-up glyphicon-chevron-down')
+		$(this).find('span.btn-label').toggle('slow');
+	})
 
-$('button.toggle-all').click(function () {
+	var fewSeconds = 1;
+
+	$('button.toggle-all').click(function () {
   // set little rotating spinner to fadein and out
   $(this).prev('i.fa').fadeIn('slow').toggleClass('fa-spinner fa-pulse').fadeOut('slow');
   // trigger other toggle buttons
   $( 'button.toggle' ).trigger( "click" );
   
-  // delay use of button after few seconds
-  var btn = $(this);
-  btn.prop('disabled', true);
-  setTimeout(function(){
-  	btn.prop('disabled', false);
-  }, fewSeconds*1000);
-})
-
+	  // delay use of button after few seconds
+	  var btn = $(this);
+	  btn.prop('disabled', true);
+	  setTimeout(function(){
+	  	btn.prop('disabled', false);
+	  	}, fewSeconds*1000);
+	})
+});
 function initialize() {
 	var myLatlng = new google.maps.LatLng(51.500086, -0.220291);
 	var mapProp = {
