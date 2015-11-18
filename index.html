@@ -1,218 +1,124 @@
 
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Michael Sova by red-starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Michael Sova</h1>
+      <h2 class="project-tagline">Software Engineer</h2>
+      <a href="https://github.com/red-starter/resume" class="btn">View on GitHub</a>
+      <a href="https://github.com/red-starter/resume/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/red-starter/resume/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
 
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script><!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <section class="main-content">
+      <p>San Francisco |
+628.999.2352 |
+<a href="mailto:michalpso@gmail.com">michalpso@gmail.com</a> |
+<a href="https://github.com/red-starter">https://github.com/red-starter</a></p>
 
-	<!-- Optional theme -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<h2>
+<a id="technical-skills" class="anchor" href="#technical-skills" aria-hidden="true"><span class="octicon octicon-link"></span></a>Technical Skills</h2>
 
-	<!-- Latest compiled and minified JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<p><strong>Strong</strong>: Javascript • Python  • D3 •  Node •  Express • Socket.io • HTML • AngularJS • MongoDB<br>
+<strong>Experienced</strong>: Flask •  Git •  MySQL •  Sequelize • Bootstrap • Heroku • Chai • Mocha  </p>
 
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script> -->
+<h2>
+<a id="projects" class="anchor" href="#projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Projects</h2>
 
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
+<h4>
+<a id="beauty-stash--fullstack-engineer--wwwbeautystashio" class="anchor" href="#beauty-stash--fullstack-engineer--wwwbeautystashio" aria-hidden="true"><span class="octicon octicon-link"></span></a>Beauty Stash | Fullstack Engineer | <a href="http://www.beautystash.io">www.beautystash.io</a>
+</h4>
 
-	<script src="script.js" type="text/javascript"></script>
+<p><em>Social web application for recommending and sharing beauty products.</em></p>
 
-	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<ul>
+<li>Designed and optimized a recommendation algorithm for 12,000 beauty products. </li>
+<li>Aggregated 522,000 user profiles through web scraping to implement an effective  recommendation  engine. </li>
+<li>Engineered a configurable decision tree view in D3 to enable users to explore their products effectively.</li>
+<li>Architected an asynchronous worker process to persist large scale computation in a non blocking manner.</li>
+</ul>
 
-	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<h4>
+<a id="kwiki--fullstack-engineer--fastkwikiherokuappcom" class="anchor" href="#kwiki--fullstack-engineer--fastkwikiherokuappcom" aria-hidden="true"><span class="octicon octicon-link"></span></a>Kwiki | Fullstack Engineer | <a href="http://fastkwiki.herokuapp.com">fastkwiki.herokuapp.com</a>
+</h4>
 
-</head>
+<p><em>Pairs up users according to geolocation through a live chat client.</em></p>
 
-<body data-spy="scroll" data-target="#my_navbar">
+<ul>
+<li>Designed a database with MongoDB to access past chats depending on the location of the user.</li>
+<li>Managed authentication of users with express and mongoDB to provide persistent socket connections. </li>
+</ul>
 
-	<div id="my_navbar" class="hidden-xs hidden-sm font">
-		<nav class="navbar navbar-default navbar-fixed-top">
-			<a class="navbar-brand" href="#profile">Michael Sova</a>
-			<ul class="nav navbar-nav pull-right">
-				<li><a href="#profile">profile</a></li>
-				<li><a href="#education">education</a></li>
-				<li><a href="#experience">experience</a></li>
-				<li><a href="#skills">additional skills</a></li>
-				<li><a href="#interests">interests</a></li>
-				<li><a href="#projects">projects</a></li>
-			</ul>
-		</nav>
-	</div>
+<h4>
+<a id="moodlet--fullstack-engineer--moodletherokuappcom" class="anchor" href="#moodlet--fullstack-engineer--moodletherokuappcom" aria-hidden="true"><span class="octicon octicon-link"></span></a>Moodlet | Fullstack Engineer | <a href="http://moodlet.herokuapp.com">moodlet.herokuapp.com</a>
+</h4>
 
-	<div class="container">
-		
-		<div id="profile">
-			<div class="row">
-				<div class="page-header">
-					<h3 class="text-left">Profile</h3>
-				</div>
-				<div class="col-md-9 ">
+<p><em>Journaling platform to improve self-awareness. A self-reflection tool that enables users to quantify and visualize their emotional patterns.</em></p>
 
-					<div class="text-left jumbotron" id="profile"> 				
-						I am a Physics student at Imperial College London. As a physicist I enjoy the challenge in the application of quantitative methods to deduce real world phenomena. I have a keen interest in problem solving and am striving to employ my skills as a web developer. 
-					</div>
-				</div>
+<ul>
+<li>Constructed an interactive graph in D3 and AngularJS to show changes in emotions over time.</li>
+<li>Implemented api routes on the backend with Sequelize and PostgreSQL to retrieve user data.</li>
+<li>Optimized graph with FakerJS to display data over different time ranges.</li>
+</ul>
 
-				<div class="hidden-sm">
-				<div class="col-md-3 hidden-xs hidden-sm font">
+<h4>
+<a id="real-time-data--fullstack-engineer--httpsgithubcomred-starter2015-08-mvp" class="anchor" href="#real-time-data--fullstack-engineer--httpsgithubcomred-starter2015-08-mvp" aria-hidden="true"><span class="octicon octicon-link"></span></a>Real Time Data | Fullstack Engineer | <a href="https://github.com/red-starter/2015-08-mvp">https://github.com/red-starter/2015-08-mvp</a>
+</h4>
 
-						<img src="images/boards.jpg" class="img-circle">
-					</div>
-				</div>
-			</div>
+<p><em>Online tool to simplify building SVG graphs.</em></p>
 
-		</div>
+<ul>
+<li>Crafted the frontend in AngularJS to enable users to submit a range of data models.</li>
+<li>Translated processed data into SVG graphs using D3.</li>
+<li>Displayed the processed data using D3 to easily visualize svg graphs. </li>
+</ul>
 
+<h4>
+<a id="ising-model--software-engineer--httpsgithubcomred-starterising-model" class="anchor" href="#ising-model--software-engineer--httpsgithubcomred-starterising-model" aria-hidden="true"><span class="octicon octicon-link"></span></a>Ising Model | Software Engineer | <a href="https://github.com/red-starter/Ising-Model">https://github.com/red-starter/Ising-Model</a>
+</h4>
 
-		<div id="education">
-			<div class="page-header">
-				<h3>Education</h3>
-			</div>
+<p><em>A computational analysis of magnets</em></p>
 
-			<table class="table table-condensed" id="table-fixed">
-				<col width="25%">
-				<col width="15%">
-				<col width="65%">
-				<thead>
-					<tr>
-						<th>Education <i class="fa fa-book"></i></th>
-						<th><span class="nowrap">Time <i class="fa fa-clock-o"></i></span></th>
-						<th>
+<ul>
+<li>Manipulated data using Numpy and Scipy to obtain results for the properties of the Ising model.</li>
+<li>Constructed graphs using Matplotlib to showcase results.</li>
+</ul>
 
-							<span class="pull-right"><i class="fa"></i>&nbsp;<button type="button" class="toggle-all btn btn-default pull-right Rbtn-Margin"><span class="btn-label"> Toggle all </span></button></span>
+<h2>
+<a id="professional-experience" class="anchor" href="#professional-experience" aria-hidden="true"><span class="octicon octicon-link"></span></a>Professional experience</h2>
 
-						</th>
-					</tr>
-				</thead>
+<h4>
+<a id="firetech-camp--technical-tutor--2014" class="anchor" href="#firetech-camp--technical-tutor--2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>Firetech Camp | Technical Tutor | 2014</h4>
 
+<ul>
+<li>Designed curriculum and wrote  lectures on the fundamentals of computer science.</li>
+<li>Instructed and tracked progress of students in Python and Java programming.</li>
+</ul>
 
-				<tbody>
-					<tr>
-						<td>Imperial College London</td>
-						<td>2012 - Present</td>
-						<td><div class="collapse" >Current grade: 2.1 . Obtained a firm grounding in quantitative methods including probability, statistics, linear algebra and calculus. Employed problem solving skills and mathematical modelling during lab sessions and tutorials. Programming and graphical software packages were used to analyse numerical data and create graphs. Developed communication skills and teamwork by collaborating in labs in order to carry out experiments effectively.<br></div><button type="button" class="toggle btn btn-default"> <span class="btn-label">BSc in Physics &nbsp;</span><i class="glyphicon glyphicon-chevron-down"></i></button></td>
-					</tr>
-					<tr>
-						<td >International School of Prague</td>
-						<td>2009-2012</td>
-						<td><div class="collapse">International Baccalaureate: HL Physics 7, HL Mathematics 6, HL Chemistry 6, SL English 6, SL French 6, SL Psychology, bonus points 1. Total points 40: translates to 611 UCAS points. Won the Mathematics and Physics awards at the end of my senior year for extraordinary academic achievement as determined by the teachers.</div><button type="button" class="toggle btn btn-default"><span class="btn-label">International Baccalaureate &nbsp;</span><i class="glyphicon glyphicon-chevron-down"></i></button></td>
-					</tr>
-					<tr>
-						<td>Riverside School of Prague</td>
-						<td>2006-2009</td>
-						<td><div class="collapse">6A*-including English language and Maths, 1A, 2B, 1C</div><button type="button" class="toggle btn btn-default"><span class="btn-label">IGCSEs &nbsp;</span><i class="glyphicon glyphicon-chevron-down"></i></button></td>
-					</tr>
-				</tbody>
-			</table>
-		</div> 
+<h2>
+<a id="education" class="anchor" href="#education" aria-hidden="true"><span class="octicon octicon-link"></span></a>Education</h2>
 
-		<div id="experience">
-			<div class="page-header">
-				<h3>Experience</h3>
-			</div>
+<ul>
+<li>Hack Reactor | 2015 | Advanced Software Engineering Immersive Program</li>
+<li>Imperial College | 2015 | BSc Physics </li>
+</ul>
 
-			<table class="table table-condensed" id="table-fixed">
-				<col width="25%">
-				<col width="15%">
-				<col width="65%">
-				<thead>
-					<tr>
-						<th >Experience <i class="fa fa-briefcase"></i></th>
-						<th colspan="2"><span class="nowrap">Time <i class="fa fa-clock-o"></i></span></th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>Tutor at Firetech Camp</td>
-						<td>2014 - present </td>
-						<td><div class="collapse">Firetech Camp is an exciting young start-up that strives to teach technology in an interactive and enjoyable manner. I am employed as a tutor and have taught both the Python and Java courses. (more information about the organization can be found on: http://firetechcamp.com )</div><button type="button" class="toggle btn btn-default"><span class="btn-label">Firetech Camp &nbsp;</span><i class="glyphicon glyphicon-chevron-down"></i></button></td>
-					</tr>
-					<tr>
-						<td>OXFAM Festival steward</td>
-						<td>2013 - 2014</td>
-						<td><div class="collapse">Worked in a team of stewards at various posts in order to ensure the festival’s attendees’ problems were resolved. Enhanced my capability to work under pressure within a diverse group of individuals.</div><button type="button" class="toggle btn btn-default"><span class="btn-label">Festival steward &nbsp;</span><i class="glyphicon glyphicon-chevron-down"></i></button>
-						</td>
-					</tr>
-					<tr>
-						<td>Science tutor</td>
-						<td>2011 - 2012</td>
-						<td><div class="collapse">Tutored students in Chemistry and Physics, explained complex topics in a more accessible manner to struggling students.</div><button type="button" class="toggle btn btn-default"><span class="btn-label">Tutored students &nbsp;</span><i class="glyphicon glyphicon-chevron-down"></i></button></td>
-					</tr>
-				</tbody>
-			</table>
+<h2>
+<a id="personal" class="anchor" href="#personal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Personal</h2>
 
-		</div> 
+<p>I practised and performed acoustic guitar for the past 7 years. I played ice hockey competitively. Ask me all about Czech beer. </p>
 
-		<div id="skills">
-			<div class="page-header">
-				<h3 class="text-left">Additional Skills</h3>
-			</div>
+    </section>
 
-			<div class="jumbotron"> 
-				<ul>
-					<li>Experience with Python during my degree (computational physics modules). Working knowledge of HTML, CSS and Javascript. Beginner at ruby on rails. Knowledgeable of unix based operating systems.</li>
-					<li> Human languages: English (Fluent), Czech (Fluent), French (Intermediate - IB and IGCSE)</li>
-				</ul>
-			</div>
-		</div> 
-
-
-		<div id="interests">
-			<div class="page-header">
-				<h3 class="text-left">Interests</h3>
-			</div>
-			<div class="jumbotron"> 
-				<ul>
-					<li>Ruby enthusiast <i class="fa fa-diamond"></i></li>
-					<li>Passionate snowboarder. Enthusiastic ice hockey player; member of imperial sports societies.<i class="fa fa-futbol-o"></i></li> 
-					<li>Avid musician, experienced guitar player. <i class="fa fa-music"></i></li>
-				</ul>
-			</div>
-		</div>
-
-		<div id="projects">
-			<div class="page-header">
-				<h3 class="text-left">Projects</h3>
-			</div>
-
-			<div class="text-left jumbotron" id="profile"> 				
-				<ul>
-					<li> My github profile can be found here: <a href="https://github.com/red-starter">LINK</a></li> 
-					<li> A pinterest inspired image sharing site written with Ruby on Rails <a href="https://pinterested14.herokuapp.com">LINK</a></li>
-					<li> I built a physics sandbox game, the aim is to collect all the planets with the help of friction and gravity. The app is the result of my experimentation with AngularJS. The backend is written in nodejs and express. <a href="https://gravity-game.herokuapp.com">LINK (not mobile friendly)</a></li>
-				</ul>
-			</div>
-
-		</div>
-
-		<div id="contact">
-			<div class="page-header">
-				<h3>Contact</h3>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<p class="nowrap" id="contact-info">
-						<i class="fa fa-map-marker"></i> 90b Lakeside road, London<br>
-						<i class="fa fa-envelope-o"></i> michalpso@gmail.com<br>
-						<i class="fa fa-mobile"></i> 07955 987 508 <br>
-					</p>
-				</div>
-				<div class="col-md-8">
-					<div id="googleMap" class="img-rounded" style="width:400px;height:280px;"></div>
-				</div>
-			</div>
-			<div class="page-header">
-			</div>
-
-		</div> 
-
-		<div class="jumbotron">References available upon request</div>
-
-	</body>
-</div>
-
-
-
-</body>
+  
+  </body>
 </html>
