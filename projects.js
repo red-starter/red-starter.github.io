@@ -8,7 +8,7 @@ var projects = [
       "Built a configurable decision tree view in D3.js and AngularJS, the nodes at each level were grouped by user defined filters, each node and level could be toggled allowing both depth first and breadth first exploration",
       "Architected an asynchronous worker process to persist large scale computation in a non blocking manner"],
     "description": "​Social web app for recommending and sharing beauty products",
-    "link": "beautystash.io",
+    "link": "http://beautystash.io",
     "images": {
     }
   },
@@ -23,7 +23,7 @@ var projects = [
     "Carried out test driven development with Mocha/Chai to ensure a robust code base and minimize regression"
     ],
     "description": "​Live chat app that pairs up users based on geolocation",
-    "link": "​rapport314.herokuapp.com",
+    "link": "​http://rapport314.herokuapp.com",
     "images": {
     }
   },
@@ -36,7 +36,7 @@ var projects = [
       "Optimized graph with mock data to display data over different time ranges"
     ],
     "description": "​​Journal app that quantifies and visualizes emotional patterns",
-    "link": "​moodlet.herokuapp.com",
+    "link": "​http://moodlet.herokuapp.com",
     "images": {
     }
   },
