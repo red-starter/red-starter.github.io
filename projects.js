@@ -8,15 +8,9 @@ var projects = [
       "Built a configurable decision tree view in D3.js and AngularJS, the nodes at each level were grouped by user defined filters, each node and level could be toggled allowing both depth first and breadth first exploration",
       "Architected an asynchronous worker process to persist large scale computation in a non blocking manner"],
     "description": "​Social web app for recommending and sharing beauty products",
-    "link": "http://beautystash.io",
-    "images": {
-    }
-
-    https://github.com/red-starter/rapport
-img/portfolio/rapport.png"
-img/portfolio/rapport.png
-A Live chat app that pairs up users based on geolocation.
-
+    "link": "http://www.beautystash.io/#/",
+    "repo": "​http://www.github.com/red-starter/beauty-site",
+    "image": "img/portfolio/beautyStash.png"
   },
   {
     "id": 2,
@@ -29,9 +23,9 @@ A Live chat app that pairs up users based on geolocation.
     "Carried out test driven development with Mocha/Chai to ensure a robust code base and minimize regression"
     ],
     "description": "​Live chat app that pairs up users based on geolocation",
-    "link": "​http://rapport314.herokuapp.com",
-    "images": {
-    }
+    "link": "​http://rapport314.herokuapp.com/",
+    "image": "img/portfolio/rapport.png",
+    "repo": "​https://github.com/red-starter/rapport"
   },
   {
     "id": 3,
@@ -43,8 +37,8 @@ A Live chat app that pairs up users based on geolocation.
     ],
     "description": "​​Journal app that quantifies and visualizes emotional patterns",
     "link": "​http://moodlet.herokuapp.com",
-    "images": {
-    }
+    "repo": "​https://github.com/red-starter/moodlet",
+    "image": "img/portfolio/moodlet.png"
   },
   {
     "id": 4,
@@ -56,8 +50,8 @@ A Live chat app that pairs up users based on geolocation.
     ],
     "description": "​​Web dashboard for simplifying the construction of SVG graphs",
     "link": "",
-    "images": {
-    }
+    "repo": "​https://github.com/red-starter/rlTimeData",
+    "image": "img/portfolio/realTime.png"
   }
 ]
 
@@ -67,13 +61,6 @@ var blogs = [
     'data':'now',
     'topic':'google',
     "title":'tech stuff',
-    "text":'Bacon ipsum dolor amet beef ribs kevin tongue, shank prosciutto rump meatball tenderloin venison chicken cupim. Landjaeger porchetta prosciutto, leberkas cupim sausage picanha pancetta pork loin spare ribs tri-tip strip steak beef. Frankfurter shankle pork spare ribs alcatra, leberkas salami tongue prosciutto meatloaf. Salami pancetta tail sausage filet mignon. Tenderloin hamburger swine, strip steak sirloin leberkas landjaeger t-bone shankle chicken spare ribs filet mignon pancetta picanha.'
-  },
-    {
-    "id":2,
-    'date':'tomorrow',
-    'topic':'bing',
-    "title":'great stuff',
     "text":'Bacon ipsum dolor amet beef ribs kevin tongue, shank prosciutto rump meatball tenderloin venison chicken cupim. Landjaeger porchetta prosciutto, leberkas cupim sausage picanha pancetta pork loin spare ribs tri-tip strip steak beef. Frankfurter shankle pork spare ribs alcatra, leberkas salami tongue prosciutto meatloaf. Salami pancetta tail sausage filet mignon. Tenderloin hamburger swine, strip steak sirloin leberkas landjaeger t-bone shankle chicken spare ribs filet mignon pancetta picanha.'
   },
     {

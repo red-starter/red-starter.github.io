@@ -6,10 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Freelancer - Start Bootstrap Theme</title>
+    <title>Michael Sova</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -80,6 +77,37 @@
         </div>
     </header>
 
+
+    <!-- Portfolio Grid Section -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr class="star-primary">
+                </div>
+            </div>
+            <div class="row" id='portfolio-list'>
+
+                <script id="portfolio-template" type="x-handlebars-template">
+                    {{#each this}}
+                    <div class="col-sm-4 portfolio-item">
+                        <a href="#portfolioModal{{id}}" class="portfolio-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-search-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="{{image}}" class="img-responsive" alt="">
+                            <p class='blog-title'> {{name}} </p>
+                        </a>
+                    </div>
+                    {{/each}}
+                </script>
+            </div>
+        </div>
+    </section>
+
     <!-- Blog Grid Section -->
 
 
@@ -111,66 +139,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                    <hr class="star-primary">
-                </div>
-            </div>
-            <div class="row" id='portfolio-list'>
-                
-                <script id="portfolio-template" type="x-handlebars-template">
-                    <div class="col-sm-4 portfolio-item">
-                        <a href="#portfolioModal{{id}}" class="portfolio-link" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                </div>
-                            </div>
-                            <img src="{{img}}" class="img-responsive" alt="">
-                            <p class='blog-title'> {{name}} </p>
-                        </a>
-                    </div>
-                </script>
-
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/moodlet.png" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/beautyStash.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="img/portfolio/realTime.jpg" class="img-responsive" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- About Section -->
     <section class="success" id="about">
         <div class="container">
@@ -256,7 +224,7 @@
                             <div class="modal-body">
                                 <ul class="list-inline item-details">
                                     <li>
-                                        <strong><a href="{{url}}">Website</a>
+                                        <strong><a href="{{link}}">Website</a>
                                         </strong>
                                     </li>
                                     |
@@ -277,103 +245,7 @@
         {{/each}}
     </script>
 
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <ul class="list-inline item-details">
-                                <li>
-                                    <strong><a href="https://moodlet.herokuapp.com">Website</a>
-                                    </strong>
-                                </li>
-                                |
-                                <li>
-                                    <strong><a href="https://github.com/red-starter/moodlet">Repository</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <img src="img/portfolio/moodlet.png" class="img-responsive img-centered" alt="">
-                            <p>Journal app that quantifies and visualizes emotional patterns</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <ul class="list-inline item-details">
-                                <li>
-                                    <strong><a href="http://www.beautystash.io/#/">Website</a>
-                                    </strong>
-                                </li>
-                                |
-                                <li>
-                                    <strong><a href="https://github.com/red-starter/beauty-site">Repository</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <img src="img/portfolio/beautyStash.png" class="img-responsive img-centered" alt="">
-                            <p>A social web app for recommending and sharing beauty products</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-             <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <ul class="list-inline item-details">
-                                <li>
-                                    <strong><a href=""></a>
-                                    </strong>
-                                </li>
-                                
-                                <li>
-                                    <strong><a href="https://github.com/red-starter/rlTimeData">Repository</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <img src="img/portfolio/realTime.png" class="img-responsive img-centered" alt="">
-                            <p>A web dashboard for simplifying the construction of SVG graphs</p>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
+  
     <!-- Blog Modals -->
     <script id="blog-modal-template" type="x-handlebars-template">
         {{#each this}}

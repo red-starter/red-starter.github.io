@@ -1,14 +1,15 @@
 $( document ).ready(function () {
 	// These are called on page load
 	function generateAllportfolioHTML(data){
-		var porfolioScript = $("#porfolios-template").html()
-		var porfolioModalScript = $("#porfolio-modal-template").html()
+		var portfolioScript = $("#portfolio-template").html()
+		var portfolioModalScript = $("#portfolio-modal-template").html()
 
-		var porfolioTemplate = Handlebars.compile(porfolioScript);
-		$('.portfolio-list').append(porfolioTemplate(data));
+		var portfolioTemplate = Handlebars.compile(portfolioScript);
+		$('#portfolio-list').append(portfolioTemplate(data));
+		console.log(portfolioTemplate(data))
 
-		var porfolioModalTemplate = Handlebars.compile(porfolioModalScript);
-		$('body').append(porfolioModalTemplate(data));
+		var portfolioModalTemplate = Handlebars.compile(portfolioModalScript);
+		$('body').append(portfolioModalTemplate(data));
 
 	}
 	generateAllportfolioHTML(projects)
