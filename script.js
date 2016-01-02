@@ -14,17 +14,17 @@ $( document ).ready(function () {
 	}
 	generateAllportfolioHTML(projects)
 
-	function generateAllBlogsHTML(data){
-		var blogScript = $("#blogs-template").html()
-		var blogModalScript = $("#blog-modal-template").html()
-		// function that compile data
-		var blogTemplate = Handlebars.compile(blogScript);
-		$('#blogs-list').append(blogTemplate(data));
+	// function generateAllBlogsHTML(data){
+	// 	var blogScript = $("#blogs-template").html()
+	// 	var blogModalScript = $("#blog-modal-template").html()
+	// 	// function that compile data
+	// 	var blogTemplate = Handlebars.compile(blogScript);
+	// 	$('#blogs-list').append(blogTemplate(data));
 
-		var blogModalTemplate = Handlebars.compile(blogModalScript);
-		$('body').append(blogModalTemplate(data));
-	}
-	generateAllBlogsHTML(blogs)
+	// 	var blogModalTemplate = Handlebars.compile(blogModalScript);
+	// 	$('body').append(blogModalTemplate(data));
+	// }
+	// generateAllBlogsHTML(blogs)
 	
 
 });

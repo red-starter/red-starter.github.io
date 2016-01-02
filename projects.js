@@ -56,18 +56,18 @@ var projects = [
 ]
 
 var blogs = [
-  {
-    "id":1,
-    'data':'now',
-    'topic':'google',
-    "title":'tech stuff',
-    "text":'Bacon ipsum dolor amet beef ribs kevin tongue, shank prosciutto rump meatball tenderloin venison chicken cupim. Landjaeger porchetta prosciutto, leberkas cupim sausage picanha pancetta pork loin spare ribs tri-tip strip steak beef. Frankfurter shankle pork spare ribs alcatra, leberkas salami tongue prosciutto meatloaf. Salami pancetta tail sausage filet mignon. Tenderloin hamburger swine, strip steak sirloin leberkas landjaeger t-bone shankle chicken spare ribs filet mignon pancetta picanha.'
-  },
-    {
-    "id":2,
-    'date':'tomorrow',
-    'topic':'bing',
-    "title":'great stuff',
-    "text":'Bacon ipsum dolor amet beef ribs kevin tongue, shank prosciutto rump meatball tenderloin venison chicken cupim. Landjaeger porchetta prosciutto, leberkas cupim sausage picanha pancetta pork loin spare ribs tri-tip strip steak beef. Frankfurter shankle pork spare ribs alcatra, leberkas salami tongue prosciutto meatloaf. Salami pancetta tail sausage filet mignon. Tenderloin hamburger swine, strip steak sirloin leberkas landjaeger t-bone shankle chicken spare ribs filet mignon pancetta picanha.'
-  }
+  // {
+  //   "id":1,
+  //   'data':'now',
+  //   'topic':'google',
+  //   "title":'tech stuff',
+  //   "text":'Bacon ipsum dolor amet beef ribs kevin tongue, shank prosciutto rump meatball tenderloin venison chicken cupim. Landjaeger porchetta prosciutto, leberkas cupim sausage picanha pancetta pork loin spare ribs tri-tip strip steak beef. Frankfurter shankle pork spare ribs alcatra, leberkas salami tongue prosciutto meatloaf. Salami pancetta tail sausage filet mignon. Tenderloin hamburger swine, strip steak sirloin leberkas landjaeger t-bone shankle chicken spare ribs filet mignon pancetta picanha.'
+  // },
+  //   {
+  //   "id":2,
+  //   'date':'tomorrow',
+  //   'topic':'bing',
+  //   "title":'great stuff',
+  //   "text":'Bacon ipsum dolor amet beef ribs kevin tongue, shank prosciutto rump meatball tenderloin venison chicken cupim. Landjaeger porchetta prosciutto, leberkas cupim sausage picanha pancetta pork loin spare ribs tri-tip strip steak beef. Frankfurter shankle pork spare ribs alcatra, leberkas salami tongue prosciutto meatloaf. Salami pancetta tail sausage filet mignon. Tenderloin hamburger swine, strip steak sirloin leberkas landjaeger t-bone shankle chicken spare ribs filet mignon pancetta picanha.'
+  // }
 ]
