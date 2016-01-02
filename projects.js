@@ -9,7 +9,7 @@ var projects = [
       "Architected an asynchronous worker process to persist large scale computation in a non blocking manner"],
     "description": "​Social web app for recommending and sharing beauty products",
     "link": "http://www.beautystash.io/#/",
-    "repo": "​http://www.github.com/red-starter/beauty-site",
+    "repo": "​https://github.com/red-starter/beauty-site",
     "image": "img/portfolio/beautyStash.png"
   },
   {
