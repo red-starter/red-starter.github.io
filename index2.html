@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Michael Sova by red-starter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Michael Sova</h1>
+      <h2 class="project-tagline">Software Engineer</h2>
+      <a href="https://medium.com/@michalpso" class="btn"> Blog </a>
+      <a href="https://github.com/red-starter/red-starter.github.io" class="btn"> GitHub </a>
+      <a href="https://linkedin.com/in/msova" class="btn"> LinkedIn </a>
+    </section>
+    <section class="main-content">
+      <p>San Francisco |
+        628.999.2352 |
+        <a href="mailto:michalpso@gmail.com">michalpso@gmail.com</a> |
+        <a href="https://github.com/red-starter">https://github.com/red-starter</a></p>
+        <h2>
+        <a id="projects" class="anchor" href="#projects" aria-hidden="true"><span class="octicon octicon-link"></span></a>Projects</h2>
+        <div class="projects-list">
+
+          <script id="projects-template" type="x-handlebars-template">
+          {{#each this}}
+          <h4>
+          <a class="anchor"<span class="octicon octicon-link"></span></a>{{name}} | {{role}} | <a href="{{link}}">link</a>
+          </h4>
+          <p><em>{{description}}</em></p>
+          <ul>
+            {{#each tasks}}
+            <li>{{this}}</li>
+            {{/each}}
+          </ul>
+          {{/each}}
+          </script>
+        </div>
+
+        <h4>
+        <a id="firetech-camp--technical-tutor--2014" class="anchor" href="#firetech-camp--technical-tutor--2014" aria-hidden="true"><span class="octicon octicon-link"></span></a>Firetech Camp | Technical Tutor | 2014</h4>
+        <ul>
+          <li>Designed curriculum and wrote  lectures on the fundamentals of computer science.</li>
+          <li>Instructed and tracked progress of students in Python and Java programming.</li>
+        </ul>
+        <h2>
+        <a id="education" class="anchor" href="#education" aria-hidden="true"><span class="octicon octicon-link"></span></a>Education</h2>
+        <ul>
+          <li>Hack Reactor | 2015 | Advanced Software Engineering Immersive Program</li>
+          <li>Imperial College | 2015 | BSc Physics </li>
+        </ul>
+        <h2>
+        <a id="personal" class="anchor" href="#personal" aria-hidden="true"><span class="octicon octicon-link"></span></a>Personal</h2>
+        <p>I practised and performed acoustic guitar for the past 7 years. I played ice hockey competitively. Ask me all about Czech beer. </p>
+      </section>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.min.js"></script>
+      <script src="script.js"></script>
+      <script src="projects.js"></script>
+      
+    </body>
+  </html>
