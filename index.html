@@ -46,6 +46,9 @@
                         <a href="#portfolio">Portfolio</a>
                     </li>  
                     <li class="page-scroll">
+                        <a href="#blog">Blog</a>
+                    </li>  
+                    <li class="page-scroll">
                         <a href="#about">About</a>
                     </li>
                     <li class="page-scroll">
@@ -74,6 +77,70 @@
         </div>
     </header>
 
+    <!-- Blog Grid Section -->
+
+    <section id="blog">
+        <div class="container">
+            <!-- <div class="row"> -->
+                <div class="col-lg-12 text-center">
+                <a href="https://medium.com/@michalpso"><div class="btn btn-default">
+                    <h2>blog</h2>
+                </div>
+            </a>
+                <hr class="star-primary">
+                </div>
+            <!-- </div> -->
+            <div id='blogs-list' class="row">
+                 <div class="col-sm-4 blog-item">
+                    <a href="https://medium.com/@michalpso/variable-hoisting-and-the-scope-chain-b1d9044fa5c4#.ibqnttb0i">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-arrow-circle-o-down fa-3x"></i>
+                                </div>
+                            </div>
+                            <p class='blog-title'> Variable hoisting and the scope chain </p>
+                        </a>
+                    </div>
+
+                     <div class="col-sm-4 blog-item">
+                    <a href="https://medium.com/@michalpso/using-observables-from-rxjs-with-user-events-6f957aa89b1c#.qhxbda6og">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-arrow-circle-o-down fa-3x"></i>
+                                </div>
+                            </div>
+                            <p class='blog-title'> Using RxJS Observables with user events</p>
+                        </a>
+                    </div>  
+                    <div class="col-sm-4 blog-item">
+                    <a href="https://medium.com/@michalpso/stay-safe-wrap-your-expensive-callbacks-with-debounce-3e524f688a2c#.avemp5ox9">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-arrow-circle-o-down fa-3x"></i>
+                                </div>
+                            </div>
+                            <p class='blog-title'> Stay safe, wrap your expensive callbacks with debounce</p>
+                        </a>
+                    </div>
+<!-- 
+                <script id="blogs-template" type="x-handlebars-template">
+                    {{#each this}}
+                    <div class="col-sm-4 blog-item">
+                        <a href="#blogModal{{id}}" class="blog-link" data-toggle="modal">
+                            <div class="caption">
+                                <div class="caption-content">
+                                    <i class="fa fa-arrow-circle-o-down fa-3x"></i>
+                                </div>
+                            </div>
+                            <p class='blog-title'> {{title}} </p>
+                        </a>
+                    </div>
+                    {{/each}}
+                </script>
+ -->
+            </div>
+        </div>
+    </section>
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio">
@@ -105,37 +172,6 @@
         </div>
     </section>
 
-    <!-- Blog Grid Section -->
-
-
-    <section id="blog">
-        <div class="container">
-           <!--  <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>blog</h2>
-                    <hr class="star-primary">
-                </div>
-            </div> -->
-            <div id='blogs-list' class="row">
-
-                <script id="blogs-template" type="x-handlebars-template">
-                    {{#each this}}
-                    <div class="col-sm-4 blog-item">
-                        <a href="#blogModal{{id}}" class="blog-link" data-toggle="modal">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <i class="fa fa-arrow-circle-o-down fa-3x"></i>
-                                </div>
-                            </div>
-                            <p class='blog-title'> {{title}} </p>
-                        </a>
-                    </div>
-                    {{/each}}
-                </script>
-
-            </div>
-        </div>
-    </section>
     <!-- About Section -->
     <section class="success" id="about">
         <div class="container">
