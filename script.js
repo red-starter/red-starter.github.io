@@ -6,7 +6,7 @@ $( document ).ready(function () {
 
 		var portfolioTemplate = Handlebars.compile(portfolioScript);
 		$('#portfolio-list').append(portfolioTemplate(data));
-		console.log(portfolioTemplate(data))
+		// console.log(portfolioTemplate(data))
 
 		var portfolioModalTemplate = Handlebars.compile(portfolioModalScript);
 		$('body').append(portfolioModalTemplate(data));
